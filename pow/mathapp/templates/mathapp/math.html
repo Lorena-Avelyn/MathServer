@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                margin-top: 20%;
+                font-weight: bold;
+            }
+        </style>
+        <script>
+            function power()
+            {
+                const i=document.getElementById("in").value;
+                const r=document.getElementById("resistance").value;
+                const p= i*i*r; 
+                document.getElementById("Answer").innerText="Power :"+ p;
+            }
+        </script>
+    </head>
+        <body bgcolor="E6E6FA">
+            <center>
+                <input type="number" placeholder="Enter Value of Intensity" id="in"><br><br>
+                <input type="number" placeholder="Enter Value of Resistance" id="resistance"><br><br>
+                <input type="button" onclick="power()" value="Calculate Power"><br><br>
+                <label id="Answer"></label>
+            </center>
+        </body>
+</html>
